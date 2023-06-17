@@ -8,12 +8,12 @@
 *Return: Always 0 (Success)
 */
 
-Int main()
+int main()
 {
-     Char ch;
+  char ch;
          for (ch='a'; ch<='z'; ch++)
            {
-             putchar("%c\n", ch\n);
+             putchar("%c\n", ch);
             }
 return (0);
 }
