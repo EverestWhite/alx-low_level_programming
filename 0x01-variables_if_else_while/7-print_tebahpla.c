@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
-* main - prints lowercase alphabets in reverse
+* main - prints lowercase alphabets
+* in reverse
 * 
 * Return: Always 0 (Success)
 */
@@ -12,7 +13,8 @@ int main(void)
 
 	for (alpha = 'z'; alpha >= 'a'; alpha--)
 	putchar(alpha);
-/* measures the values of the
+/**
+ * measures the values of the
  * characters from highest to lowest and prints
  */
 	putchar('\n');
