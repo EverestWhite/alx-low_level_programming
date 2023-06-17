@@ -13,10 +13,6 @@ int main(void)
 
 	for (alpha = 'z'; alpha >= 'a'; alpha--)
 	putchar(alpha);
-/**
- * measures the values of the
- * characters from highest to lowest and prints
- */
 	putchar('\n');
 
 	return (0);
