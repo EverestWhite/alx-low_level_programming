@@ -1,4 +1,4 @@
-#include <sdtio.h>
+#include <stdio.h>
 #include "main.h"
 /**
  * print_alphabet_x10 - prints lower case alphabets 20x
