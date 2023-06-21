@@ -5,9 +5,9 @@
  * equal or less than zero.
  *
  *@: the input number
-
- * Return: 1 when greater than zero. 0 when zero.
- * -1 when less than 0
+ *
+ * Return: 1 when greater than zero. 
+ * 0 when zero. -1 when less than 0
  */
 int print_sign(int x)
 {
