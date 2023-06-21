@@ -3,7 +3,9 @@
 /**
  * _islower - checks if the alphabet is lower case
  *
- * Return: Always 0 (Success)
+ * Return: 1 for lowercase and 0 for other types
+ *
+ * @x: ASCII character
  */
 int _islower(int x)
 {
