@@ -2,7 +2,7 @@
 
 /**
  * more_numbers - prints 0-14 ten tiimes
- * 
+ *
  * Return: 0-14 ten tiimeme
  */
 void more_numbers(void)
@@ -12,7 +12,6 @@ void more_numbers(void)
 	for (y = 0; y < 10; y++)
 	{
 		for (x = 0; x <= 14; x++)
-			
 		{
 			if (x >= 10)
 			{
