@@ -11,7 +11,7 @@ void print_array(int *x, int y)
 {
 	int i = 0;
 
-	for (; i < n; i++)
+	for (; i < y; i++)
 	{
 		printf("%d", *(x + i));
 		if (i != (y - 1))
