@@ -5,7 +5,6 @@
  * argstostr - fxn that concatenates all the argmts of a program.
  * @ac: argument count.
  * @av: argument vector.
- * 
  * Return: pointer of an array of char
  */
 char *argstostr(int ac, char **av)
