@@ -40,7 +40,6 @@ char *_strdup(char *str)
 	/* if malloc fails, return NULL */
 	if (copy == NULL)
 	return (NULL);
-	
 	/* copy string inside str to copy */
 	for (i = 0; str[i] != '\0'; i++)
 	copy[i] = str[i];
