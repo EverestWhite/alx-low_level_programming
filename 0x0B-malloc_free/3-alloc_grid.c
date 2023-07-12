@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - fxn which returns a pointer to 
+ * alloc_grid - fxn which returns a pointer to
  * a 2 dimensional array of integers.
  * @width: width of the array.
  * @height: height of the array.
@@ -12,7 +12,7 @@ int **alloc_grid(int width, int height)
 {
 	int **gridout;
 	int i, j;
-	
+
 	if (width < 1 || height < 1)
 	return (NULL);
 
@@ -34,7 +34,7 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 	}
-	
+
 	for (i = 0; i < height; i++)
 		for (j = 0; j < width; j++)
 			gridout[i][j] = 0;
