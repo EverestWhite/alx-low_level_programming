@@ -25,21 +25,21 @@ add_t *adding_all_mul(char *a, int len_a, char *b, int len_b)
 	for (i = len_a - 1; i >= 0; i--)
 	{
 		carry = 0;
-	for (j = len_b - 1; j >= 0; j--)
+		for (j = len_b - 1; j >= 0; j--)
 		{
-		carry += (a[i] - '0') * (b[j] - '0');
-		carry += result->n_add[i + j + 1] - '0';
+			carry += (a[i] - '0') * (b[j] - '0');
+			carry += result->n_add[i + j + 1] - '0';
+	
+			result->n_add[i + j + 1] = (carry % 10) + '0';
+			carry /= 10;
 		}
-
-		result->n_add[i + j + 1] = (carry % 10) + '0';
-		carry /= 10;
+		if (carry)
+			result->n_add[i + j + 1] = (carry % 10) + '0';
 	}
-if (carry)
-	result->n_add[i + j + 1] = (carry % 10) + '0';
-if (result->n_add[0] != '0')
-	result->n_dig = len_a + len_b;
-else
-	result->n_dig = len_a + len_b - 1;
+	if (result->n_add[0] != '0')
+		result->n_dig = len_a + len_b;
+	else
+		result->n_dig = len_a + len_b - 1;
 
 	return (result);
 }
