@@ -30,7 +30,7 @@ add_t *adding_all_mul(char *a, int len_a, char *b, int len_b)
 		carry += (a[i] - '0') * (b[j] - '0');
 		carry += result->n_add[i + j + 1] - '0';
 		}
-		
+
 		result->n_add[i + j + 1] = (carry % 10) + '0';
 		carry /= 10;
 	}
@@ -45,7 +45,7 @@ else
 }
 
 /**
- * print_free_result - fxn that print the result of the 
+ * print_free_result - fxn that print the result of the
  * multiplication and free all
  * @result: Addition pointer to the total resul of the  multiplication
  * Result: Nothing
@@ -85,7 +85,7 @@ void error_message(void)
 	_putchar(error_msg[i]);
 	i++;
 	}
-	
+
 	_putchar('\n');
 
 	exit(98);
@@ -113,8 +113,7 @@ int main(int ac, char **av)
 			is_a = 0, len_a = i;
 		if (is_b == 1 && b[i] == '\0')
 			is_b = 0, len_b = i;
-		if ((is_a == 1 && (a[i] < '0' || a[i] > '9')) ||
-			(is_b == 1 && (b[i] < '0' || b[i] > '9')))error_message();
+		if ((is_a == 1 && (a[i] < '0' || a[i] > '9')) || (is_b == 1 && (b[i] < '0' || b[i] > '9')))error_message();
 	}
 
 	if (len_a == 0 || len_b == 0)
