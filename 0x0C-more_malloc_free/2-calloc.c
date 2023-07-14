@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
  * _calloc - fxn that allocates memory for an array.
  * @nmemb: number of elements.
@@ -11,6 +12,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *p;
+
 	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
